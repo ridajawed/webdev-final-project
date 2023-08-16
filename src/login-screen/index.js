@@ -1,15 +1,54 @@
+import "../css/index.css";
+import { useNavigate } from 'react-router-dom';
+
+
 function Login() {
-    return (
+    const navigate = useNavigate();
+    const handleClick = () => navigate('/profile');    return (
         <div className="nav-padding">
             <div className="row">
                 <div className="col-6">
-                    <h1>Login</h1>
+                    <div className="row">
+                        <div className="col-1"></div>
+                        <div className="col-7 padding-top">
+                            <div className="container">
+                                <h1 className="">Login</h1>
+                                <form>
+                                    <label for="username">Username:</label><br />
+                                    <input className="form-control width-300" type="text" id="username" name="username" /><br />
+                                    <label for="password">Password:</label><br />
+                                    <input className="form-control" type="password" id="password" name="password" />
+                                    <button onClick={handleClick} type="submit" className="mt-3 rounded-pill btn btn-primary">Get Started</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
-                <div height={500} className="col-6 bg-primary round-top-left round-bottom-left">
-                    <h1>Sign Up</h1>
+                <div className="col-6 bg-grey round-top-left round-bottom-left">
+                    <div className="row">
+                        <div className="col-1"></div>
+                        <div className="col-7 padding-top max-height">
+                            <div className="container">
+                                <h1 className="">Sign Up</h1>
+                                <form>
+                                    <label for="email">Email:</label><br />
+                                    <input className="form-control width-300" type="email" id="email" name="email" /><br />
+                                    <label for="username">Username:</label><br />
+                                    <input className="form-control" type="text" id="username" name="username" /><br />
+                                    <label for="password">Password:</label><br />
+                                    <input className="form-control width-300" type="password" id="password" name="password" /><br />
+                                    <label for="confirm-password">Confirm Password:</label><br />
+                                    <input className="form-control" type="password" id="confirm-password" name="confirm-password" />
+                                    <button onClick={handleClick} type="submit" className="mt-3 rounded-pill btn btn-primary">Get Started</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     );
- }
- export default Login;
+}
+export default Login;

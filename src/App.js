@@ -5,6 +5,7 @@ import {HashRouter, Navigate} from "react-router-dom";
 import {Routes, Route} from "react-router";
 import Welcome from './welcome-screen';
 import Explore from './explore-screen';
+import Home from './home-screen';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <div>
         <NavBar/>
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Welcome />} />
+          <Route path="/" element={<Navigate to="/about" />} />
+          <Route path="/about" element={<Welcome />} />
+          <Route path="/home" element={<Home/>} />
           <Route path="/explore/*" element={<Explore/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Navigate to="/login" />} />

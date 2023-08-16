@@ -95,7 +95,7 @@
 }
 
 .nav-padding {
-    padding-top: 60px;
+    padding-top: 59px;
 }
 
 /* .bg-my-primary {
@@ -119,4 +119,78 @@
 
 .round-bottom-left {
     border-bottom-left-radius: 70px;
+}
+
+.padding-left {
+    padding-left: 10%;
+}
+
+.margin-left {
+    margin-left: 100px;
+}
+
+.padding-top {
+    padding-top: 10%;
+}
+
+.width-300 {
+    width: 300px;
+}
+
+.max-height {
+    height: 100%;
+    min-height: 100vh;
+}
+
+.bg-grey {
+    background-color: lightgrey;
+}
+
+div.hscroll {
+    margin: 4px, 4px;
+    padding: 4px;
+    width: 300px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.event-summary-item {
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    height: 310px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.month {
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+
+}
+
+.day {
+    font-weight: bold;
+    font-size: x-large;
+    color: red;
+}
+
+.time {
+    font-size: small;
+}
+
+.event-title {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.padding-0 {
+    padding: 0;
 }

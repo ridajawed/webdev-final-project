@@ -9,7 +9,7 @@ function NavBar() {
     const { pathname } = useLocation();
     const [ignore, active] = pathname.split("/");
     return (
-        <div className="w-100 pos-fixed bg-white">
+        <div className="w-100 pos-fixed bg-grey">
             <ul className="nav nav-pills mb-2 mt-2 float-start">
                 <li className="nav-item">
                     <h1 className="nav-link">
@@ -18,21 +18,20 @@ function NavBar() {
                 </li>
             </ul>
             <ul className="nav nav-pills mb-2 mt-2 float-end">
+            <li className="nav-item">
+                    <Link to="/about" className={`nav-link ${active === "about" ? "active" : ""}`}>About</Link>
+                </li>
                 <li className="nav-item">
                     <Link to="/home" className={`nav-link ${active === "home" ? "active" : ""}`}>Home</Link>
-                    {/* <a className="nav-link active">For You</a> */}
                 </li>
                 <li className="nav-item">
                     <Link to="/explore" className={`nav-link ${active === "explore" ? "active" : ""}`}>Explore</Link>
-                    {/* <a className="nav-link active">For You</a> */}
                 </li>
                 <li className="nav-item">
                     <Link to="/login" className={`nav-link ${active === "login" ? "active" : ""}`}>Log In</Link>
-                    {/* <a className="nav-link active">For You</a> */}
                 </li>
                 <li className="nav-item">
                     <Link to="/signup" className={`nav-link ${active === "signup" ? "active" : ""}`}>Sign Up</Link>
-                    {/* <a className="nav-link active">For You</a> */}
                 </li>
             </ul>
             {/* <Link to="/home">Home</Link> |
