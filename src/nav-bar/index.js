@@ -25,7 +25,7 @@ function NavBar() {
                     <Link to="/home" className={`nav-link ${active === "home" ? "active" : ""}`}>Home</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/explore" className={`nav-link ${active === "explore" ? "active" : ""}`}>Explore</Link>
+                    <Link to="/search" className={`nav-link ${active === "search" ? "active" : ""}`}>Search</Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/login" className={`nav-link ${active === "login" ? "active" : ""}`}>Log In</Link>
