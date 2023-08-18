@@ -1,3 +1,4 @@
+import React from "react";
 import "../css/index.css";
 import { useNavigate } from 'react-router-dom';
 import EventSummaryList from "../events/event-summary-list";

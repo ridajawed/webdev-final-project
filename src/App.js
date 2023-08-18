@@ -1,3 +1,4 @@
+import React from "react";
 import './App.css';
 import NavBar from './nav-bar';
 import Login from './login-screen';
@@ -16,7 +17,7 @@ function App() {
   return (
     <HashRouter>
       <div>
-        <NavBar/>
+        <NavBar />
         <Routes>
           <Route path="/" element={<Navigate to="/about" />} />
           <Route path="/about" element={<Welcome />} />

@@ -1,8 +1,7 @@
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../css/index.css";
 // import { useSelector } from "react-redux";
-
-
 
 function NavBar() {
     // const { currentUser } = useSelector((state) => state.user);
@@ -38,9 +37,8 @@ function NavBar() {
             <Link to="/explore">Explore</Link> |
             <Link to="/login">Log In</Link> |
             <Link to="/signup">Sign Up</Link> */}
-        </div>
-    )
+    </div>
+  );
 }
 
 export default NavBar;
-
