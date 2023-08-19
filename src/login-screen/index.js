@@ -3,21 +3,30 @@ import "../css/index.css";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { loginThunk } from "../services/auth-thunks";
+import { register } from "../services/auth-thunks";
 
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const handleLogin = async () => {
+  const handleRegister = async () => {
     try {
-      await dispatch(loginThunk({ username, password }));
-      navigate("/tuiter/profile");
+      await dispatch(register({ username, password }));
+      console.log("registered!");
+      console.log(username);
     } catch (e) {
       alert(e);
     }
   };
-  const handleClick = () => navigate("/profile");
+  const handleLogin = async () => {
+    try {
+      await dispatch(loginThunk({ username, password }));
+      navigate("./profile");
+    } catch (e) {
+      alert(e);
+    }
+  };
   return (
     <div className="nav-padding">
       <div className="row">
@@ -28,29 +37,31 @@ function Login() {
               <div className="container">
                 <h1 className="">Login</h1>
                 <form>
-                  <label for="username">Username:</label>
+                  <label htmlFor="username">Username:</label>
                   <br />
                   <input
                     className="form-control width-300"
                     type="text"
                     id="username"
                     name="username"
+                    onChange={(event) => setUsername(event.target.value)}
                   />
                   <br />
-                  <label for="password">Password:</label>
+                  <label htmlFor="password">Password:</label>
                   <br />
                   <input
                     className="form-control"
                     type="password"
                     id="password"
                     name="password"
+                    onChange={(event) => setPassword(event.target.value)}
                   />
                   <button
-                    onClick={handleClick}
+                    onClick={handleLogin}
                     type="submit"
                     className="mt-3 rounded-pill btn btn-primary"
                   >
-                    Get Started
+                    Login
                   </button>
                 </form>
               </div>
@@ -64,7 +75,7 @@ function Login() {
               <div className="container">
                 <h1 className="">Sign Up</h1>
                 <form>
-                  <label for="email">Email:</label>
+                  <label htmlFor="email">Email:</label>
                   <br />
                   <input
                     className="form-control width-300"
@@ -73,25 +84,27 @@ function Login() {
                     name="email"
                   />
                   <br />
-                  <label for="username">Username:</label>
+                  <label htmlFor="username">Username:</label>
                   <br />
                   <input
                     className="form-control"
                     type="text"
                     id="username"
                     name="username"
+                    onChange={(event) => setUsername(event.target.value)}
                   />
                   <br />
-                  <label for="password">Password:</label>
+                  <label htmlFor="password">Password:</label>
                   <br />
                   <input
                     className="form-control width-300"
                     type="password"
                     id="password"
                     name="password"
+                    onChange={(event) => setPassword(event.target.value)}
                   />
                   <br />
-                  <label for="confirm-password">Confirm Password:</label>
+                  <label htmlFor="confirm-password">Confirm Password:</label>
                   <br />
                   <input
                     className="form-control"
@@ -100,7 +113,7 @@ function Login() {
                     name="confirm-password"
                   />
                   <button
-                    onClick={handleClick}
+                    onClick={handleRegister}
                     type="submit"
                     className="mt-3 rounded-pill btn btn-primary"
                   >
