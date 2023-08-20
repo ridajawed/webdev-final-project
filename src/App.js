@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
 import NavBar from "./nav-bar";
-import Login from "./login-screen";
 import { HashRouter, Navigate } from "react-router-dom";
 import { Routes, Route } from "react-router";
 import Welcome from "./welcome-screen";
 import Search from "./search-screen";
 import Home from "./home-screen";
+import Login from "./login-screen";
+import Register from "./register-screen";
 import Profile from "./profile-screen";
 import AttendingList from "./profile/attending-list-profile";
 import WishList from "./profile/wish-list-profile";
@@ -33,7 +34,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/search/*" element={<Search />} />
             <Route path="/login" element={<Login />} />
-            {/* <Route path="/signup" element={<Navigate to="/login" />} /> */}
+            <Route path="/register" element={<Register />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/profile/attending" element={<AttendingList />} />
             <Route path="/profile/wishlist" element={<WishList />} />
