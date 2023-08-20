@@ -1,6 +1,6 @@
 import React from "react";
 import welcomeImage from "../images/welcome.jpg";
-import EventSummaryList from "../event-summary-list";
+import EventSummaryList from "../events/event-summary-list";
 import SearchBar from "../search-bar";
 
 function Explore() {

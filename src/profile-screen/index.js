@@ -2,7 +2,7 @@ import React from "react";
 import "../css/index.css";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import EventSummaryList from "../event-summary-list";
+import EventSummaryList from "../events/event-summary-list";
 import { logoutThunk } from "../services/auth-thunks";
 
 function Profile() {
