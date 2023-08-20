@@ -1,0 +1,10 @@
+[
+  {
+    "_id": "64dea4ea7cb90e5534221501",
+    "title": "Cooking Beginner Event",
+    "date": {
+      "$date": "2023-08-21T04:00:00.000Z"
+    },
+    "description": "Pasta cooking event. Open to all levels of experience."
+  }
+]
