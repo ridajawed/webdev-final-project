@@ -2,7 +2,7 @@ import React from "react";
 import "../css/index.css";
 import { useNavigate } from "react-router-dom";
 import EventSummaryList from "../events/event-summary-list";
-import MakeAPost from "./make-a-post";
+import MakeAPost from "../profile-screen/make-a-post";
 import PostsList from "../posts-list";
 import WhoToFollowList from "../who-to-follow-list";
 

@@ -6,6 +6,7 @@ import { register } from "../services/auth-thunks";
 function Register() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [userType, setUserType] = useState("");
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -63,6 +64,31 @@ function Register() {
                   type="password"
                   id="register-confirm-password"
                 />
+                <br />
+                <label htmlFor="user-type">User Type:</label>
+                <div>
+                  <input
+                    // className="form-control"
+                    type="radio"
+                    id="traveller"
+                    name="user-type"
+                    value="traveller"
+                    onChange={(event) => setUserType(event.target.value)}
+                  />
+                  <label htmlFor="traveller">Traveller </label>
+                </div>
+                <div>
+                  <input
+                    // className="form-control"
+                    type="radio"
+                    id="business"
+                    name="user-type"
+                    value="business"
+                    onChange={(event) => setUserType(event.target.value)}
+                  />
+                  <label htmlFor="business"> Business</label>
+                </div>
+                <br />
                 <button
                   onClick={handleRegister}
                   type="submit"
