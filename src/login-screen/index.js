@@ -53,7 +53,7 @@ function Login() {
                 </button>
                 <br />
                 <br />
-                <button onClick={() => navigate("/register")}>Register</button>
+                <button className="rounded-pill btn btn-primary" onClick={() => navigate("/register")}>Register</button>
               </div>
             </div>
           </div>
