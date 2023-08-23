@@ -237,7 +237,7 @@ function Register() {
                         />
                         <label htmlFor="indoors">Indoors</label>
                       </div>
-                    </div> */}
+                    </div> 
                   </div>
                   <br />
 
