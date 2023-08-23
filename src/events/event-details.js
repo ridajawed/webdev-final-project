@@ -35,14 +35,14 @@ const EventsDetails = (
             </div>
           </div>
           <div className="col-6">
-            <div className="row">
-              <div className="col-4">
+            <div className="row float-end">
+              <div className="col-3">
                 <button type="submit" className="mt-3 rounded-pill btn btn-primary">Attend</button>
               </div>
               <div className="col-4">
-                <button type="submit" className="mt-3 rounded-pill btn btn-secondary">Add to Wishlist</button>
+                <button type="submit" className="mt-3 rounded-pill btn btn-secondary">Wishlist</button>
               </div>
-              <div className="col-4">
+              <div className="col-5">
                 <button type="submit" className="mt-3 rounded-pill btn btn-danger">Delete Event</button>
               </div>
             </div>
