@@ -8,7 +8,21 @@ import NavProfile from "./nav-profile";
 import Info from "../profile-screen/info";
 import MakeAPost from "./make-a-post";
 
-function Profile() {
+const Profile = (
+  {
+    user = {
+      "_id" : "12wed",
+      "username": { type: "billybob", required: true, unique: true },
+      "password": { type: "helloo1", required: true },
+      "firstName": "Bob",
+      "lastName": "Billy",
+      "userType": "traveller",
+      "coverImage": "welcome.jpg",
+      "profileImage" : "travel2.jpg"
+    }
+  }
+
+) => {
   const { currentUser } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -24,9 +38,9 @@ function Profile() {
         {" "}
         Logout
       </button>
-      <Info />
+      <Info key={user._id} user={user} />
       {currentUser && currentUser.userType == "business" && <MakeAPost />}
-      <NavProfile />
+      <NavProfile key={user._id} user={user} />
     </div>
   );
 }
