@@ -3,11 +3,14 @@ import * as service from "./events-service";
 
 export const findEventsThunk = createAsyncThunk(
   "events/findEvents",
-  async () => await service.findEvents()
+  async () => {
+    const events = await service.findEvents();
+    return events;
+  }
 );
 
 export const createEventThunk = createAsyncThunk(
-  "tuits/createEvent",
+  "events/createEvent",
   async (event) => {
     const newEvent = await service.createEvent(event);
     return newEvent;
@@ -25,4 +28,9 @@ export const deleteEventThunk = createAsyncThunk(
 export const updateEventThunk = createAsyncThunk(
   "events/updateEvent",
   async (event) => await service.updateEvent(event)
+);
+
+export const fetchEventsThunk = createAsyncThunk(
+  "events/fetchEvents",
+  async () => await service.fetchEvents()
 );

@@ -7,22 +7,20 @@ import { logoutThunk } from "../services/auth-thunks";
 import NavProfile from "./nav-profile";
 import Info from "../profile-screen/info";
 import MakeAPost from "./make-a-post";
+import { fetchEventsThunk, findEventsThunk } from "../services/events-thunks";
 
-const Profile = (
-  {
-    user = {
-      "_id" : "12wed",
-      "username": { type: "billybob", required: true, unique: true },
-      "password": { type: "helloo1", required: true },
-      "firstName": "Bob",
-      "lastName": "Billy",
-      "userType": "traveller",
-      "coverImage": "welcome.jpg",
-      "profileImage" : "travel2.jpg"
-    }
-  }
-
-) => {
+const Profile = ({
+  user = {
+    _id: "12wed",
+    username: { type: "billybob", required: true, unique: true },
+    password: { type: "helloo1", required: true },
+    firstName: "Bob",
+    lastName: "Billy",
+    userType: "traveller",
+    coverImage: "welcome.jpg",
+    profileImage: "travel2.jpg",
+  },
+}) => {
   const { currentUser } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -43,5 +41,5 @@ const Profile = (
       <NavProfile key={user._id} user={user} />
     </div>
   );
-}
+};
 export default Profile;
