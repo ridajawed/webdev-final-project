@@ -21,10 +21,10 @@ function Login() {
   return (
     <div className="nav-padding">
       <div className="row">
-        <div className="col-6">
+        <div className="col-md-6 col-sm-12">
           <div className="row">
             <div className="col-1"></div>
-            <div className="col-7 padding-top">
+            <div className="col-md-7 padding-top">
               <div className="container">
                 <h1 className="">Login</h1>
                 <label htmlFor="username">Username:</label>

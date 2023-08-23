@@ -3,7 +3,7 @@ import { BsBookmark } from "react-icons/bs";
 import { BsBookmarkFill } from "react-icons/bs";
 import PostStats from "./post-stats";
 import EventSummaryItem from "../events/event-summary-list/event-summary-item";
-import EventItem from "../events/event-summary-list/event-item-post";
+import EventItem from "../events/event-summary-list/event-item-home";
 
 import eventsArray from "../events/event-summary-list/events.json";
 

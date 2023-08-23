@@ -5,6 +5,7 @@ import EventSummaryList from "../events/event-summary-list";
 import MakeAPost from "../profile-screen/make-a-post";
 import PostsList from "../posts-list";
 import WhoToFollowList from "../who-to-follow-list";
+import EventSummaryListHome from "../events/events-list-home";
 
 function Home() {
   return (
@@ -16,10 +17,10 @@ function Home() {
       </div>
 
       <div className="row ml-5">
-        <div className="ml-5 col-8 ">
-          <PostsList />
+        <div className="ml-5 col-xxl-8 col-xl-8 col-l-7 ">
+          <EventSummaryListHome />
         </div>
-        <div className="ml-5 col-4 float-end">
+        <div className="d-xl-inline-block d-none ml-5 col-4 float-end">
           <WhoToFollowList />
         </div>
       </div>

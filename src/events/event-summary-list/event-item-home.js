@@ -2,7 +2,7 @@ import React from "react";
 import { BsBookmark } from "react-icons/bs";
 import { BsBookmarkFill } from "react-icons/bs";
 
-const EventSummaryItemPost = (
+const EventSummaryItemHome = (
   {
     event = {
       "title": "Party",
@@ -24,7 +24,7 @@ const EventSummaryItemPost = (
     saveButton = <BsBookmark />;
   }
   return (
-    <li className="event-item list-group-item list-group-item-secondary ml-5 mr-5">
+    <li className="event-item list-group-item list-group-item-secondary ml-5 mr-5 mb-2">
       <div className="row mb-2">
         <img width={600} height={225} className="" src={`/images/${event.banner}`} />
       </div>
@@ -56,4 +56,4 @@ const EventSummaryItemPost = (
     </li>
   );
 };
-export default EventSummaryItemPost;
+export default EventSummaryItemHome;

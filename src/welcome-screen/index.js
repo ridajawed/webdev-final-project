@@ -24,19 +24,12 @@ function Welcome() {
         <br />
       </div>
       <div className="row">
-        <div className="col-5 parent">
+        <div className="col-12 col-sm-5 parent">
           <div className="center padding-70">
-            <h1>App Name</h1>
-            <h3>Slogan</h3>
+            <h1>Wander</h1>
+            <h3>Travel with an Impact</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id
-              ante vitae ex porttitor sollicitudin vel ac neque. In quis mi eget
-              arcu egestas sagittis vitae ut dui. Nunc iaculis fringilla eros eu
-              euismod. Phasellus finibus accumsan nisi, posuere pellentesque
-              ligula facilisis ultrices. Aenean tristique massa sit amet nisi
-              cursus, eu tempus elit mattis. Aliquam rutrum velit diam, vel
-              tempus velit placerat id. Vivamus finibus efficitur ipsum, vel
-              commodo nunc convallis eu. Sed .
+              Help small business build a name while vacationing around the world and exploring new adventure that awaut you!
             </p>
             <button
               onClick={handleClick}

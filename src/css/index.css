@@ -178,14 +178,15 @@ div.hscroll {
 }
 
 .event-item {
-    width: 650px;
-    min-width: 650px;
-    max-width: 650px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     height: 310px;
     margin-left: 10px;
     margin-right: 10px;
 
 }
+
 
 /* .pt-5 {
     padding-top: px;

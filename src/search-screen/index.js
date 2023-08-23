@@ -12,7 +12,7 @@ function Search() {
       </div>
       <div className="pt-3 container">
         <div className="row">
-          <div className="col-11 position-relative">
+          <div className="col-lg-11 col-md-10 col-sm-10 position-relative">
             <input
               placeholder="Activities to do..."
               className="form-control rounded-pill ps-5"
@@ -22,8 +22,8 @@ function Search() {
                        wd-nudge-up"
             />
           </div>
-          <div className="col-1">
-            <button className="rounded-pill btn btn-primary float-end">
+          <div className="col-lg-1 col-md-2 col-sm-2">
+            <button className="ml-1 rounded-pill btn btn-primary float-end">
               Search
             </button>
           </div>

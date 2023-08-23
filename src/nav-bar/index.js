@@ -10,8 +10,8 @@ function NavBar() {
   return (
     <div className="w-100 pos-fixed bg-grey">
       <ul className="nav nav-pills mb-2 mt-2 float-start">
-        <li className="nav-item">
-          <h1 className="nav-link">Travel App</h1>
+        <li className="nav-item d-sm-inline-block d-none">
+          <h1 className="nav-link">Wander</h1>
         </li>
       </ul>
       <ul className="nav nav-pills mb-2 mt-2 float-end">
