@@ -105,37 +105,37 @@ function Register() {
                       <div>
                         <input
                           type="checkbox"
-                          id="outdoors"
+                          id="Restaurant"
                           name="preferences"
                         />
-                        <label htmlFor="outdoors">Outdoors</label>
+                        <label htmlFor="Restaurant">Restaurant</label>
                       </div>
                       <div>
                         <input
                           type="checkbox"
-                          id="partying"
+                          id="Tour"
                           name="preferences"
                         />
-                        <label htmlFor="partying">Partying</label>
+                        <label htmlFor="Tour">Tour</label>
                       </div>
                       <div>
                         <input
                           type="checkbox"
-                          id="yoga"
+                          id="Cooking"
                           name="preferences"
                         />
-                        <label htmlFor="yoga">Yoga</label>
+                        <label htmlFor="Cooking">Cooking</label>
                       </div>
                       <div>
                         <input
                           type="checkbox"
-                          id="museums"
+                          id="Wine-tasting"
                           name="preferences"
                         />
-                        <label htmlFor="museums">Museums</label>
+                        <label htmlFor="Wine-tasting">Wine Tasting</label>
                       </div>
                     </div>
-                    <div className="col-3">
+                    {/* <div className="col-3">
                       <div>
                         <input
                           type="checkbox"
@@ -168,9 +168,9 @@ function Register() {
                         />
                         <label htmlFor="fashion">Fashion</label>
                       </div>
-                    </div>
+                    </div> */}
 
-                    <div className="col-3">
+                    {/* {/* <div className="col-3">
                       <div>
                         <input
                           type="checkbox"
@@ -203,7 +203,7 @@ function Register() {
                         />
                         <label htmlFor="nature">Nature</label>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="col-3">
                       <div>
                         <input
@@ -237,18 +237,18 @@ function Register() {
                         />
                         <label htmlFor="indoors">Indoors</label>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                   <br />
 
                 </div>
                 <button
-                    onClick={handleRegister}
-                    type="submit"
-                    className="mt-3 rounded-pill btn btn-primary"
-                  >
-                    Get Started
-                  </button>
+                  onClick={handleRegister}
+                  type="submit"
+                  className="mt-3 rounded-pill btn btn-primary"
+                >
+                  Get Started
+                </button>
 
               </div>
             </div>
@@ -256,7 +256,7 @@ function Register() {
         </div>
 
       </div>
-    </div>
+    </div >
   );
 }
 export default Register;
