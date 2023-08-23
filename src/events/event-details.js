@@ -34,6 +34,19 @@ const EventsDetails = (
               <h4 className="mt-5">{event.time}</h4>
             </div>
           </div>
+          <div className="col-6">
+            <div className="row">
+              <div className="col-4">
+                <button type="submit" className="mt-3 rounded-pill btn btn-primary">Attend</button>
+              </div>
+              <div className="col-4">
+                <button type="submit" className="mt-3 rounded-pill btn btn-secondary">Add to Wishlist</button>
+              </div>
+              <div className="col-4">
+                <button type="submit" className="mt-3 rounded-pill btn btn-danger">Delete Event</button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <br />
