@@ -204,7 +204,7 @@ function Register() {
                         <label htmlFor="nature">Nature</label>
                       </div>
                     </div> */}
-                    <div className="col-3">
+                    {/* <div className="col-3">
                       <div>
                         <input
                           type="checkbox"
@@ -237,7 +237,7 @@ function Register() {
                         />
                         <label htmlFor="indoors">Indoors</label>
                       </div>
-                    </div> */}
+                    </div>  */}
                   </div>
                   <br />
 
@@ -249,7 +249,6 @@ function Register() {
                 >
                   Get Started
                 </button>
-
               </div>
             </div>
           </div>
