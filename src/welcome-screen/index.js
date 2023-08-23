@@ -1,8 +1,9 @@
 import React from "react";
-import welcomeImage from "../images/welcome.jpg";
+import welcomeImage from "../images/welcome-banner.png";
 import travelImage1 from "../images/travel1.jpg";
 import travelImage2 from "../images/travel2.jpg";
 import travelImage3 from "../images/travel3.jpg";
+import travelBunch from "../images/welcome-pack.png";
 import "../css/index.css";
 import { useNavigate } from "react-router-dom";
 
@@ -13,9 +14,9 @@ function Welcome() {
     <div className="nav-padding position-relative mb-2 bg-my-primary wide">
       <div className="w-100">
         <img src={welcomeImage} className="w-100" alt={"Welcome"} />
-        <h1 className="position-absolute centered text-white">
+        {/* <h1 className="position-absolute centered text-white">
           Travel with an Impact
-        </h1>
+        </h1> */}
         <br />
         <br />
         <br />
@@ -24,12 +25,12 @@ function Welcome() {
         <br />
       </div>
       <div className="row">
-        <div className="col-12 col-sm-5 parent">
+        <div className="col-sm-12 col-md-5 parent">
           <div className="center padding-70">
             <h1>Wander</h1>
             <h3>Travel with an Impact</h3>
             <p>
-              Help small business build a name while vacationing around the world and exploring new adventure that awaut you!
+              Help small business build a name while vacationing around the world and exploring new adventures that await you!
             </p>
             <button
               onClick={handleClick}
@@ -39,8 +40,13 @@ function Welcome() {
             </button>
           </div>
         </div>
-        <div className="col-6">
-          <div>
+        <div className="col-md-5 d-s-none">
+        <img
+              className="size-100"
+              src={travelBunch}
+              alt={"Tarvel 1"}
+            />
+          {/* <div>
             <img
               className="pos-absolute-10-10"
               src={travelImage1}
@@ -62,7 +68,7 @@ function Welcome() {
               width={400}
               alt={"Tarvel 1"}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

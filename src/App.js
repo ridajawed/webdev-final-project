@@ -17,6 +17,7 @@ import { Provider } from "react-redux";
 import whoReducer from "./reducers/who-reducer";
 import eventsReducer from "./reducers/events-reducer";
 import authReducer from "./reducers/auth-reducer";
+import EventsDetails from "./events/event-details";
 
 const store = configureStore({
   reducer: { who: whoReducer, event: eventsReducer, user: authReducer },
@@ -39,6 +40,9 @@ function App() {
             <Route path="/profile/attending" element={<AttendingList />} />
             <Route path="/profile/wishlist" element={<WishList />} />
             <Route path="/profile/past-events" element={<PastEventsList />} />
+            <Route path="/details" element={<EventsDetails/>} />
+
+            
           </Routes>
         </div>
       </HashRouter>
