@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import coverImage from "../images/welcome.jpg";
-import profileImage from "../images/travel2.jpg";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router";
+
 import { updateUserThunk } from "../services/auth-thunks";
 
 
@@ -24,13 +24,22 @@ const Info = (
 ) => {
   let [whatsHappening, setWhatsHappening] = useState('');
   const dispatch = useDispatch();
-  const statusChangeHandler = () => {
-    const newUser = {
-        status: whatsHappening
-    }
-    dispatch(updateUserThunk({ ...user, status: "Helloo"}))    ;
+  const navigate = useNavigate();
+
+  const statusChangeHandler = (newStatus) => {
+    // try {
+    //   navigate("/login");
+    //   console.log("registered!");
+    // } catch (e) {
+    //   alert(e);
+    // }
+    dispatch(updateUserThunk({ ...user, status: newStatus}))    
     setWhatsHappening("");
-}
+  };
+  
+  // const handleRegister = async () => {
+
+  // };
   return (
 
     <div className="">
@@ -51,6 +60,7 @@ const Info = (
         <div>
           <label htmlFor="status">Status</label>
           <br />
+          <span>{user.status}</span>
           {/* <input
             className="form-control"
             type="status"
@@ -58,12 +68,13 @@ const Info = (
             value={user.status}
           /> */}
           {/* <input className="" type="status" name="status" value={user.status} placeholder="Enter your name..." onChange={(event) => setStatus(event.target.value)} /> */}
+
           <textarea value={whatsHappening} placeholder="What's happening?"
             className="form-control border-0"
             onChange={(event) => setWhatsHappening(event.target.value)}>
           </textarea>
           <button className="rounded-pill btn btn-primary float-end mt-2 ps-3 pe-3 fw-bold"
-            onClick={statusChangeHandler}>
+            onClick={statusChangeHandler(whatsHappening)}>
             Update Status
           </button>
 
