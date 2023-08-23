@@ -2,20 +2,17 @@ import React from "react";
 import { BsBookmark } from "react-icons/bs";
 import { BsBookmarkFill } from "react-icons/bs";
 
-const EventSummaryItem = (
-  {
-    event = {
-      "title": "Party",
-      "day": "22",
-      "month": "OCT",
-      "year": "2023",
-      "time": "6:30pm-7:30pm",
-      "image": "travel2.jpg",
-      "saved": true
-    }
-  }
-  
-) => {
+const EventSummaryItem = ({
+  event = {
+    title: "Party",
+    day: "22",
+    month: "OCT",
+    year: "2023",
+    time: "6:30pm-7:30pm",
+    image: "travel2.jpg",
+    saved: true,
+  },
+}) => {
   let saveButton;
   if (event.saved) {
     saveButton = <BsBookmarkFill color="#fb3958" />;
@@ -29,7 +26,8 @@ const EventSummaryItem = (
           width={200}
           height={225}
           className=""
-          src={`/images/${event.image}`}
+          // src={`/images/${event.image}`}
+          src={`${event.image}`}
         />
       </div>
       <div className="row">
