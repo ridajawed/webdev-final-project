@@ -9,6 +9,14 @@ export const findEventsThunk = createAsyncThunk(
   }
 );
 
+export const searchEventsThunk = createAsyncThunk(
+  "events/searchEvents",
+  async (eventType) => {
+    const events = await service.searchEvents(eventType);
+    return events;
+  }
+);
+
 export const createEventThunk = createAsyncThunk(
   "events/createEvent",
   async (event) => {

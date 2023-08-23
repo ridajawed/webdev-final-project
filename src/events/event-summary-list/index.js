@@ -2,13 +2,22 @@ import React, { useEffect } from "react";
 import eventsArray from "./events.json";
 import EventSummaryItem from "./event-summary-item";
 import { useDispatch, useSelector } from "react-redux";
-import { findEventsThunk } from "../../services/events-thunks";
+import {
+  findEventsThunk,
+  searchEventsThunk,
+} from "../../services/events-thunks";
 
-const EventSummaryList = () => {
+const EventSummaryList = (eventType) => {
   const { events, loading } = useSelector((state) => state.event);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(findEventsThunk());
+    if (eventType.props[eventType] == null) {
+      dispatch(findEventsThunk());
+    } else {
+      console.log(eventType.props[eventType]);
+      dispatch(searchEventsThunk(eventType.props[eventType]));
+      // dispatch(findEventsThunk());
+    }
   }, []);
   return (
     <div className="hscroll w-100">

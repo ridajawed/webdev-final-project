@@ -15,6 +15,13 @@ export const findEvents = async () => {
   return events;
 };
 
+export const searchEvents = async (eventType) => {
+  const response = await axios.get(`${EVENTS_API}/${eventType}`);
+  const events = response.data;
+  console.log(events);
+  return events;
+};
+
 export const deleteEvent = async (eid) => {
   const response = await axios.delete(`${EVENTS_API}/${eid}`);
   return response.data;
