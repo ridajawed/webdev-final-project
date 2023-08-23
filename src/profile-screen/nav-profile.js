@@ -7,6 +7,7 @@ import { Link, useLocation } from "react-router-dom";
 
 function NavProfile() {
   const { pathname } = useLocation();
+  const { currentUser } = useSelector((state) => state.user);
   const [ignore, profile, active] = pathname.split("/");
 
   return (
@@ -20,14 +21,17 @@ function NavProfile() {
             Attending
           </Link>
         </li>
-        <li className="nav-item">
-          <Link
-            to="/profile/wishlist"
-            className={`nav-link ${active === "wishlist" ? "active" : ""}`}
-          >
-            Wishlist
-          </Link>
-        </li>
+        {!currentUser && (
+                  <li className="nav-item">
+                  <Link
+                    to="/profile/wishlist"
+                    className={`nav-link ${active === "wishlist" ? "active" : ""}`}
+                  >
+                    Wishlist
+                  </Link>
+                </li>
+
+        )}
         <li className="nav-item">
           <Link
             to="/profile/past-events"
