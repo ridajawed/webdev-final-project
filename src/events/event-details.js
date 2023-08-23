@@ -39,7 +39,6 @@ const EventsDetails = (
         <br />
         <div className="border-3">
           <h1 className="mt-4">Event: {event.title}</h1>
-
           <br />
           <p>{event.details}</p>
         </div>
@@ -48,10 +47,6 @@ const EventsDetails = (
           <img className="w-100" height={500} src={`/images/${event.image}`} />
 
         </div>
-
-
-
-
       </div>
     </div>
   );
