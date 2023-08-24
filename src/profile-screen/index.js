@@ -11,9 +11,9 @@ import { fetchEventsThunk, findEventsThunk } from "../services/events-thunks";
 
 const Profile = ({
   user = {
-    _id: "12wed",
-    username: { type: "billybob", required: true, unique: true },
-    password: { type: "helloo1", required: true },
+    _id: "12wed2023",
+    username: { type: String, required: true, unique: true },
+    password: { type: String, required: true },
     firstName: "Bob",
     lastName: "Billy",
     userType: "traveller",

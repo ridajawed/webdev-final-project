@@ -12,7 +12,7 @@ function Register() {
 
   const handleRegister = async () => {
     try {
-      await dispatch(register({ username, password }));
+      await dispatch(register({ username, password, userType }));
       navigate("/login");
       console.log("registered!");
       console.log(username);
@@ -67,7 +67,6 @@ function Register() {
                       id="register-confirm-password"
                     />
                     <br />
-
                   </div>
                 </div>
 
@@ -79,7 +78,7 @@ function Register() {
                       type="radio"
                       id="traveller"
                       name="user-type"
-                      value="traveller"
+                      value={userType}
                       onChange={(event) => setUserType(event.target.value)}
                     />
                     <label htmlFor="traveller">Traveller </label>
@@ -90,7 +89,7 @@ function Register() {
                       type="radio"
                       id="business"
                       name="user-type"
-                      value="business"
+                      value={userType}
                       onChange={(event) => setUserType(event.target.value)}
                     />
                     <label htmlFor="business"> Business</label>
@@ -109,11 +108,7 @@ function Register() {
                         <label htmlFor="Restaurant">Restaurant</label>
                       </div>
                       <div>
-                        <input
-                          type="checkbox"
-                          id="Tour"
-                          name="preferences"
-                        />
+                        <input type="checkbox" id="Tour" name="preferences" />
                         <label htmlFor="Tour">Tour</label>
                       </div>
                       <div>
@@ -135,7 +130,6 @@ function Register() {
                     </div>
                   </div>
 
-
                   <br />
                 </div>
               </div>
@@ -150,9 +144,7 @@ function Register() {
           </div>
         </div>
       </div>
-
     </div>
-
   );
 }
 export default Register;

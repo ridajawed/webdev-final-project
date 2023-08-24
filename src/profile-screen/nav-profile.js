@@ -10,7 +10,6 @@ function NavProfile() {
   const { pathname } = useLocation();
   const { currentUser } = useSelector((state) => state.user);
   const [ignore, profile, active] = pathname.split("/");
-  const { currentUser } = useSelector((state) => state.user);
 
   return (
     // (currentUser &&
