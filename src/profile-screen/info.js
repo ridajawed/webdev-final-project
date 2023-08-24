@@ -9,12 +9,16 @@ const Info = (
   {
     user = {
       "_id": "12wed",
+      "_id": "12wed",
       "username": { type: "billybob", required: true, unique: true },
       "password": { type: "helloo1", required: true },
       "firstName": "Bob",
       "lastName": "Billy",
       "userType": "traveller",
       "coverImage": "welcome.jpg",
+      "profileImage": "travel2.jpg",
+      "status": "I like to go on hikes",
+      "preferences": ["hiking ", "outdoors ", "museums "]
       "profileImage": "travel2.jpg",
       "status": "I like to go on hikes",
       "preferences": ["hiking ", "outdoors ", "museums "]
@@ -41,6 +45,7 @@ const Info = (
 
   // };
   return (
+
 
     <div className="">
       <div className="w-100">

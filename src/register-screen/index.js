@@ -106,35 +106,44 @@ function Register() {
                         <input
                           type="checkbox"
                           id="Restaurant"
+                          id="Restaurant"
                           name="preferences"
                         />
+                        <label htmlFor="Restaurant">Restaurant</label>
                         <label htmlFor="Restaurant">Restaurant</label>
                       </div>
                       <div>
                         <input
                           type="checkbox"
                           id="Tour"
+                          id="Tour"
                           name="preferences"
                         />
+                        <label htmlFor="Tour">Tour</label>
                         <label htmlFor="Tour">Tour</label>
                       </div>
                       <div>
                         <input
                           type="checkbox"
                           id="Cooking"
+                          id="Cooking"
                           name="preferences"
                         />
+                        <label htmlFor="Cooking">Cooking</label>
                         <label htmlFor="Cooking">Cooking</label>
                       </div>
                       <div>
                         <input
                           type="checkbox"
                           id="Wine-tasting"
+                          id="Wine-tasting"
                           name="preferences"
                         />
                         <label htmlFor="Wine-tasting">Wine Tasting</label>
+                        <label htmlFor="Wine-tasting">Wine Tasting</label>
                       </div>
                     </div>
+                    {/* <div className="col-3">
                     {/* <div className="col-3">
                       <div>
                         <input
@@ -168,6 +177,7 @@ function Register() {
                         />
                         <label htmlFor="fashion">Fashion</label>
                       </div>
+                    </div> */}
                     </div> */}
 
                     {/* {/* <div className="col-3">
@@ -237,7 +247,7 @@ function Register() {
                         />
                         <label htmlFor="indoors">Indoors</label>
                       </div>
-                    </div>  */}
+                    </div>  */} 
                   </div>
                   <br />
 
