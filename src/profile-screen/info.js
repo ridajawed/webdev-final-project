@@ -49,7 +49,11 @@ const Info = (
 
     <div className="">
       <div className="w-100">
-        <img src={`/images/${user.coverImage}`} className="w-100" alt={"Welcome"} />
+        <img
+          src={`/images/${user.coverImage}`}
+          className="w-100"
+          alt={"Welcome"}
+        />
         <img
           width={100}
           height={100}
@@ -60,8 +64,16 @@ const Info = (
       <div className="container profile-on-banner">
         @{user.username.type}
         <br />
-        <b>{user.firstName} {user.lastName}</b>
+        <b>
+          {user.firstName} {user.lastName}
+        </b>
         <br />
+        <span>
+          <b>Status: </b>
+          {user.status}
+        </span>
+        <br />
+<<<<<<< HEAD
         <div>
           <label htmlFor="status">Status</label>
           <br />
@@ -85,10 +97,15 @@ const Info = (
 
         </div>
         <label><b>Event preferences:</b></label>
+=======
+        <label>
+          <b>Event preferences:</b>
+        </label>
+>>>>>>> fix events
         <p>{user.preferences}</p>
         <br />
       </div>
     </div>
   );
-}
+};
 export default Info;

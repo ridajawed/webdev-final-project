@@ -6,13 +6,15 @@ import welcomeImage from "../images/welcome.jpg";
 import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-
 function NavProfile() {
   const { pathname } = useLocation();
   const { currentUser } = useSelector((state) => state.user);
   const [ignore, profile, active] = pathname.split("/");
+  const { currentUser } = useSelector((state) => state.user);
 
   return (
+    // (currentUser &&
+    // currentUser == "traveller" && (
     <div className="container">
       <ul className="nav nav-pills mb-2 mt-2 justify-content-center">
         <li className="nav-item">
@@ -24,15 +26,14 @@ function NavProfile() {
           </Link>
         </li>
         {!currentUser && (
-                  <li className="nav-item">
-                  <Link
-                    to="/profile/wishlist"
-                    className={`nav-link ${active === "wishlist" ? "active" : ""}`}
-                  >
-                    Wishlist
-                  </Link>
-                </li>
-
+          <li className="nav-item">
+            <Link
+              to="/profile/wishlist"
+              className={`nav-link ${active === "wishlist" ? "active" : ""}`}
+            >
+              Wishlist
+            </Link>
+          </li>
         )}
         <li className="nav-item">
           <Link

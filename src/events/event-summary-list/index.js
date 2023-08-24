@@ -7,25 +7,14 @@ import {
   searchEventsThunk,
 } from "../../services/events-thunks";
 
-const EventSummaryList = (eventType) => {
+const EventSummaryList = () => {
   const { events, loading } = useSelector((state) => state.event);
   const dispatch = useDispatch();
   useEffect(() => {
-    if (eventType.props[eventType] == null) {
-      dispatch(findEventsThunk());
-    } else {
-      console.log(eventType.props[eventType]);
-      dispatch(searchEventsThunk(eventType.props[eventType]));
-      // dispatch(findEventsThunk());
-    }
+    dispatch(findEventsThunk);
   }, []);
   return (
     <div className="hscroll w-100">
-      {/* <ul className="list-group list-group-horizontal">
-        {eventsArray.map((event) => (
-          <EventSummaryItem key={event._id} event={event} />
-        ))}
-      </ul> */}
       <ul className="list-group list-group-horizontal">
         {loading && <li className="list-group-item">Loading...</li>}
         {events.map((event) => (

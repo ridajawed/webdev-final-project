@@ -49,7 +49,7 @@ const MakeAPost = () => {
             value={title}
             onChange={(event) => setTitle(event.target.value)}
           />
-          <label htmlFor="title">Title:</label>
+          <label htmlFor="title">Description:</label>
           <br />
           <input
             className="form-control"

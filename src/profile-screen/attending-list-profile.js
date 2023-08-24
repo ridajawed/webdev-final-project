@@ -5,9 +5,11 @@ import Info from "./info";
 import EventSummaryItemProfile from "../events/event-summary-list/event-summary-item-profile";
 import EventSummaryList from "../events/event-summary-list";
 import EventSummaryItem from "../events/event-summary-list/event-summary-item";
-import React from "react";
+import React, { useEffect } from "react";
 import postsArray from "../posts-list/posts.json";
 import PostItem from "../posts-list/post-item";
+import { useDispatch, useSelector } from "react-redux";
+import { findEventsThunk } from "../services/events-thunks";
 
 const AttendingList = () => {
   return (

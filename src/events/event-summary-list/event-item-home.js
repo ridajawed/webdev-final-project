@@ -12,6 +12,7 @@ const EventSummaryItemHome = ({
     image: "travel2.jpg",
     banner: "travel2banner.jpg",
     saved: false,
+    desc: "Birthday party with friends",
   },
 }) => {
   let saveButton;
@@ -42,10 +43,14 @@ const EventSummaryItemHome = ({
             <div className="row">
               <p className="event-title m-0 mt-2">{event.title}</p>
             </div>
+            <div className="row">
+              <p className="event-title m-0 mt-2">{event.desc}</p>
+            </div>
           </div>
         </div>
         <div className="col-1">
           <div className="float-end">{saveButton}</div>
+          <br />
         </div>
       </div>
     </li>
