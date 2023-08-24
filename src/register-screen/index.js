@@ -71,8 +71,6 @@ function Register() {
                   </div>
                 </div>
 
-
-
                 <div className="row">
                   <label htmlFor="user-type">User Type:</label>
                   <div>
@@ -106,166 +104,55 @@ function Register() {
                         <input
                           type="checkbox"
                           id="Restaurant"
-                          id="Restaurant"
                           name="preferences"
                         />
-                        <label htmlFor="Restaurant">Restaurant</label>
                         <label htmlFor="Restaurant">Restaurant</label>
                       </div>
                       <div>
                         <input
                           type="checkbox"
                           id="Tour"
-                          id="Tour"
                           name="preferences"
                         />
-                        <label htmlFor="Tour">Tour</label>
                         <label htmlFor="Tour">Tour</label>
                       </div>
                       <div>
                         <input
                           type="checkbox"
                           id="Cooking"
-                          id="Cooking"
                           name="preferences"
                         />
-                        <label htmlFor="Cooking">Cooking</label>
                         <label htmlFor="Cooking">Cooking</label>
                       </div>
                       <div>
                         <input
                           type="checkbox"
                           id="Wine-tasting"
-                          id="Wine-tasting"
                           name="preferences"
                         />
-                        <label htmlFor="Wine-tasting">Wine Tasting</label>
                         <label htmlFor="Wine-tasting">Wine Tasting</label>
                       </div>
                     </div>
-                    {/* <div className="col-3">
-                    {/* <div className="col-3">
-                      <div>
-                        <input
-                          type="checkbox"
-                          id="theme-parks"
-                          name="preferences"
-                        />
-                        <label htmlFor="theme-parks">Theme Parks</label>
-                      </div>
-                      <div>
-                        <input
-                          type="checkbox"
-                          id="art"
-                          name="preferences"
-                        />
-                        <label htmlFor="art">Art</label>
-                      </div>
-                      <div>
-                        <input
-                          type="checkbox"
-                          id="beaches"
-                          name="preferences"
-                        />
-                        <label htmlFor="beaches">Beaches</label>
-                      </div>
-                      <div>
-                        <input
-                          type="checkbox"
-                          id="fashion"
-                          name="preferences"
-                        />
-                        <label htmlFor="fashion">Fashion</label>
-                      </div>
-                    </div> */}
-                    </div> */}
-
-                    {/* {/* <div className="col-3">
-                      <div>
-                        <input
-                          type="checkbox"
-                          id="pet-friendly"
-                          name="preferences"
-                        />
-                        <label htmlFor="pet-friendly">Pet Friendly</label>
-                      </div>
-                      <div>
-                        <input
-                          type="checkbox"
-                          id="tours"
-                          name="preferences"
-                        />
-                        <label htmlFor="tours">Tours</label>
-                      </div>
-                      <div>
-                        <input
-                          type="checkbox"
-                          id="shopping"
-                          name="preferences"
-                        />
-                        <label htmlFor="shopping">Shopping</label>
-                      </div>
-                      <div>
-                        <input
-                          type="checkbox"
-                          id="nature"
-                          name="preferences"
-                        />
-                        <label htmlFor="nature">Nature</label>
-                      </div>
-                    </div> */}
-                    {/* <div className="col-3">
-                      <div>
-                        <input
-                          type="checkbox"
-                          id="downtown"
-                          name="preferences"
-                        />
-                        <label htmlFor="downtown">Downtown</label>
-                      </div>
-                      <div>
-                        <input
-                          type="checkbox"
-                          id="food"
-                          name="preferences"
-                        />
-                        <label htmlFor="food">Food</label>
-                      </div>
-                      <div>
-                        <input
-                          type="checkbox"
-                          id="boating"
-                          name="preferences"
-                        />
-                        <label htmlFor="boating">Boating</label>
-                      </div>
-                      <div>
-                        <input
-                          type="checkbox"
-                          id="indoors"
-                          name="preferences"
-                        />
-                        <label htmlFor="indoors">Indoors</label>
-                      </div>
-                    </div>  */} 
                   </div>
-                  <br />
 
+
+                  <br />
                 </div>
-                <button
-                  onClick={handleRegister}
-                  type="submit"
-                  className="mt-3 rounded-pill btn btn-primary"
-                >
-                  Get Started
-                </button>
               </div>
+              <button
+                onClick={handleRegister}
+                type="submit"
+                className="mt-3 rounded-pill btn btn-primary"
+              >
+                Get Started
+              </button>
             </div>
           </div>
         </div>
-
       </div>
-    </div >
+
+    </div>
+
   );
 }
 export default Register;

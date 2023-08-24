@@ -18,7 +18,7 @@ const Info = (
       "coverImage": "welcome.jpg",
       "profileImage": "travel2.jpg",
       "status": "I like to go on hikes",
-      "preferences": ["hiking ", "outdoors ", "museums "]
+      "preferences": ["hiking ", "outdoors ", "museums "],
       "profileImage": "travel2.jpg",
       "status": "I like to go on hikes",
       "preferences": ["hiking ", "outdoors ", "museums "]

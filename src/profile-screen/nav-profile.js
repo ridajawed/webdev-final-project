@@ -4,6 +4,8 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { GoGear } from "react-icons/go";
 import welcomeImage from "../images/welcome.jpg";
 import { Link, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 
 function NavProfile() {
   const { pathname } = useLocation();
