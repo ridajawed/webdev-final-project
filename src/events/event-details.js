@@ -1,10 +1,13 @@
 import React from "react";
 import eventsArray from "./event-summary-list/events.json";
 import EventSummaryItem from "./event-summary-list/event-summary-item";
+import { useDispatch } from "react-redux";
+import { deleteEvent } from "../services/events-service";
 
 const EventsDetails = (
   {
     event = {
+      "_id" : "1234567",
       "title": "Party",
       "day": "22",
       "month": "OCT",
@@ -18,6 +21,11 @@ const EventsDetails = (
   }
 
 ) => {
+  const dispatch = useDispatch();
+  const deleteEventHandler = (id) => {
+      // dispatch(deleteEvent(id));
+  }
+
   return (
     <div className="nav-padding">
       <img className="w-100" height={500} src={`/images/${event.banner}`} />
@@ -43,7 +51,7 @@ const EventsDetails = (
                 <button type="submit" className="mt-3 rounded-pill btn btn-secondary">Wishlist</button>
               </div>
               <div className="col-5">
-                <button type="submit" className="mt-3 rounded-pill btn btn-danger">Delete Event</button>
+                <button type="submit" className="mt-3 rounded-pill btn btn-danger" onClick={deleteEventHandler(event._id)}>Delete Event</button>
               </div>
             </div>
           </div>
